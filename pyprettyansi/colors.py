@@ -1,0 +1,3 @@
+
+class AnsiColors(object):
+    pass
