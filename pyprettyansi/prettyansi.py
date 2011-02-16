@@ -51,9 +51,9 @@ class AnsiPrettyPrint(object):
     """ A decorator that sets the given ansi terminal color for a passed
         functions output which is printed """
 
-    def __init__(self, color):
+    def __init__(self, color, mode='fg'):
         self.color = color
-        self.ansi = AnsiColors()
+        self.ansi = AnsiColors(mode=mode)
 
     def __call__(self, f):
 

@@ -1,6 +1,6 @@
 from pyprettyansi.prettyansi import AnsiPrettyPrint, AnsiColors
 
-@AnsiPrettyPrint('blue')
+@AnsiPrettyPrint('blue', mode='bg')
 def printstuff():
     print "hey there"
 
