@@ -52,7 +52,7 @@ class AnsiColors(object):
         else:
             print AnsiColors.color_prefix % 24
 
-@staticmethod
+    @staticmethod
     def activate_color(color, mode='fg'):
         """ You can use this method straight from the class rather than using
             an existing AnsiColors instance """
