@@ -4,7 +4,7 @@ from pyprettyansi.prettyansi import AnsiPrettyPrint, AnsiColors
 def printstuff():
     print "hey there"
 
-@AnsiPrettyPrint('yellow')
+@AnsiPrettyPrint('yellow', bold=True)
 def morethings():
     print "i should be yellow"
     x = range(1, 20)
