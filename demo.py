@@ -1,10 +1,13 @@
-from pyprettyansi.prettyansi import AnsiPrettyPrint
+from pyprettyansi.prettyansi import AnsiPrettyPrint, AnsiColors
 
-@AnsiPrettyPrint
+@AnsiPrettyPrint('blue')
 def printstuff():
     print "hey there"
-    print "stuff etc "
-    print "\n\nhey\theyter!!"
 
+@AnsiPrettyPrint('yellow')
+def morethings():
+    print "i should be yellow"
 
 printstuff()
+morethings()
+print "I come after"
