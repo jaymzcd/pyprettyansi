@@ -41,22 +41,22 @@ class AnsiColors(object):
     @staticmethod
     def bold(is_bold, switch_on=True):
         if is_bold and switch_on:
-            print AnsiColors.color_prefix % 1
+            print AnsiColors.color_prefix % 1,
         else:
-            print AnsiColors.color_prefix % 22
+            print AnsiColors.color_prefix % 22,
 
     @staticmethod
     def underline(is_underline, switch_on=True):
         if is_underline and switch_on:
-            print AnsiColors.color_prefix % 4
+            print AnsiColors.color_prefix % 4,
         else:
-            print AnsiColors.color_prefix % 24
+            print AnsiColors.color_prefix % 24,
 
     @staticmethod
     def activate_color(color, mode='fg'):
         """ You can use this method straight from the class rather than using
             an existing AnsiColors instance """
-        print AnsiColors.color_prefix % (AnsiColors.colors[mode][color])
+        print AnsiColors.color_prefix % (AnsiColors.colors[mode][color]),
 
     @property
     def end(self):
